@@ -5,84 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/ef7a3fcd6b.js" crossorigin="anonymous"></script>
 </head>
 <body class="bg-gradient-to-r from-pink-300 to-pink-600" >
     <div class="m-6 p-12">
-      <div class="flex justify-center  m-auto">
+      <div class="flex justify-center m-auto">
         <div class="flex justify-center border border-2 border-black-200 shadow-2xl rounded-xl">
-          <div
-            class="flex flex-col gap-28 bg-pink-300 px-12 py-8 pr-32 rounded-l-lg"
-          >
-            <div class="text-4xl  px-3 m-6">
-              <h1>PLAYER 1</h1>
-              <p class="flex justify-center m-2 text-5xl text-pink-700">0</p>
+          <div class="flex flex-col gap-20 md:gap-28 bg-pink-300 px-3 md:px-6 lg:px-12 py-3 md:py-4 lg:py-8 pr-14 md:pr-24 lg:pr-32 rounded-l-lg">
+            <div class="text-sm sm:text-lg md:text-xl lg:text-4xl px-0 md:px-1 lg:px-3 m-2 sm:m-3 md:m-6">
+              <h1 class="flex justify-center ">PLAYER 1</h1>
+              <p class="flex justify-center m-1 md:m-2 text-xl sm:text-3xl md:text-4xl lg:text-5xl text-pink-700">0</p>
             </div>
-            <div class="m-6">
-              <div class="text-2xl border border-2 border-pink-700 shadow-xl bg-pink-700 text-white rounded-lg mx-2">
-                <h1 class="flex justify-center">current</h1>
-                <p class="flex justify-center m-1">0</p>
+            <div class="p-2 m-4 md:m-6">
+              <div class="text-xs sm:text-sm md:text-lg lg:text-2xl border border-2 border-pink-700 shadow-xl bg-pink-700 text-white rounded-lg px-2 md:mx-1 lg:mx-2">
+                <h1 class="flex justify-center ">current</h1>
+                <p class="flex justify-center md:m-1">0</p>
               </div>
             </div>
           </div>
           <div class="absolute">
-            <div class="flex flex-col justify-between">
-              <h3 class="border border-1 border-white shadow-xl rounded-3xl bg-white px-8 my-6 mb-16 ">
-                ic New Game
+            <div class="flex flex-col justify-between text-xs md:text-sm lg:text-lg">
+              <h3 class="border border-1 border-white shadow-xl rounded-3xl bg-white px-2 md:px-4 lg:px-8 my-3 sm:my-4 md:my-6 mb-6 sm:mb-10 md:mb-12 lg:mb-16 ">
+                <i class="fa-solid fa-dice-d6"></i> New Game
               </h3>
-              <div id="0" class="p-8 m-10 mb-24 ">
+              <div id="0" class="h-14 w-14 md:h-22 md:w-24 lg:h-30 lg:w-32 p-3 md:p-6 lg:p-8 m-6 md:m-8 lg:m-10 mb-12 sm:mb-14 md:mb-28 lg:mb-24">
+                <!-- <i id="role" class="fa-solid fa-dice-one"></i> -->
+                <img src="dice-1.jpg" alt="dice-1" class=" rounded-md lg:rounded-lg">
               </div>
-              <div id="1" class="border border-1 border-white bg-white shadow-2xl p-8 m-10 mb-24 hidden">
-                <div class="relative left-1 border-4 border-red-800 w-1 rounded-full"></div>
-              </div>
-              <div id="2" class="border border-1 border-white bg-white shadow-2xl p-8 m-10 mb-24 hidden">
-                <div class="relative bottom-5 left-6 border border-4 border-red-800 w-1 rounded-full"></div>
-                <div class="relative top-5 right-5 border border-4 border-red-800 w-1 rounded-full"></div>
-              </div>
-              <div id="3" class="border border-1 border-white bg-white shadow-2xl p-7 m-10 mb-24 hidden">
-                <div class="relative bottom-5 left-7 border border-4 border-red-800 w-1 rounded-full"></div>
-                <div class="relative bottom-1 left-2 border-4 border-red-800 w-1 rounded-full"></div>
-                <div class="relative top-3 right-3 border border-4 border-red-800 w-1 rounded-full"></div>
-              </div>
-              <div id="4" class="border border-1 border-white bg-white shadow-2xl p-6 m-10 mb-24 hidden">
-                <div class="relative bottom-2 right-3 border border-4 border-red-800 w-1 rounded-full"></div>
-                <div class="relative bottom-4 left-7 border border-4 border-red-800 w-1 rounded-full"></div>
-                <div class="relative top-4 right-3 border border-4 border-red-800 w-1 rounded-full"></div>
-                <div class="relative top-2 left-7 border border-4 border-red-800 w-1 rounded-full"></div>
-              </div>
-              <div id="5" class="border border-1 border-white bg-white shadow-2xl p-4 m-10 mb-24 hidden">
-                <div class="relative bottom-2 right-1 border border-4 border-red-800 w-1 rounded-full"></div>
-                <div class="relative bottom-4 left-10 border border-4 border-red-800 w-1 rounded-full"></div>
-                <div class="relative left-5 bottom-1 border-4 border-red-800 w-1 rounded-full"></div>
-                <div class="relative top-2 right-1 border border-4 border-red-800 w-1 rounded-full"></div>
-                <div class="relative  left-10 border border-4 border-red-800 w-1 rounded-full"></div>
-              </div>
-              <div id="6" class="border border-1 border-white bg-white shadow-2xl p-3 m-10 mb-24 hidden">
-                <div class="relative bottom-1 right-1 border border-4 border-red-800 w-1 rounded-full"></div>
-                <div class="relative bottom-3 left-12 border border-4 border-red-800 w-1 rounded-full"></div>
-                <div class="relative right-1 top-2 border-4 border-red-800 w-1 rounded-full"></div>
-                <div class="relative left-12  border-4 border-red-800 w-1 rounded-full"></div>
-                <div class="relative top-4 right-1 border border-4 border-red-800 w-1 rounded-full"></div>
-                <div class="relative top-2 left-12 border border-4 border-red-800 w-1 rounded-full"></div>
-              </div>
-              <div class="flex flex-col gap-4 sticky">
-                <button class="border border-2 border-white bg-white rounded-3xl px-6 shadow-2xl">
-                  ic ROLL DICE
+              <div class="flex flex-col gap-1 sm:gap-2 md:gap-4">
+                <button class="border border-2 border-white bg-white rounded-3xl px-1 sm:px-2  lg:px-6 shadow-2xl">
+                  <i class="fa-solid fa-dice"></i> ROLL DICE
                 </button>
-                <button class="border border-2 border-white bg-white rounded-3xl px-6 shadow-2xl">ic HOLD</button>
+                <button class="border border-2 border-white bg-white rounded-3xl px-1 md:px-2 lg:px-6 shadow-2xl"><i class="fa-solid fa-circle-stop"></i> HOLD</button>
               </div>
             </div>
           </div>
-          <div
-            class="flex flex-col gap-28 bg-pink-100 px-12 py-8 pl-32 rounded-r-lg"
-          >
-            <div class="text-4xl px-3 m-6">
-              <h1>PLAYER 2</h1>
-              <p class="flex justify-center m-2 text-5xl text-pink-700">0</p>
+          <div class="flex flex-col gap-20 md:gap-28 bg-pink-100 px-3 md:px-6 lg:px-12 py-3 md:py-4 lg:py-8 pl-14 md:pl-24 lg:pl-32 rounded-r-lg">
+            <div class="text-sm sm:text-lg md:text-xl lg:text-4xl px-0 md:px-1 lg:px-3 m-2 sm:m-3 md:m-6">
+              <h1 class="flex justify-center ">PLAYER 2</h1>
+              <p class="flex justify-center m-1 md:m-2 text-xl sm:text-3xl md:text-4xl lg:text-5xl text-pink-700">0</p>
             </div>
-            <div class="m-6">
-              <div class="text-2xl border border-2 border-pink-700 shadow-xl bg-pink-700 text-white rounded-lg mx-2">
-                <h1 class="flex justify-center">current</h1>
-                <p class="flex justify-center m-1">0</p>
+            <div class="p-2 m-4 md:m-6">
+              <div class="text-xs sm:text-sm md:text-lg lg:text-2xl border border-2 border-pink-700 shadow-xl bg-pink-700 text-white rounded-lg px-2 md:mx-1 lg:mx-2">
+                <h1 class="flex justify-center ">current</h1>
+                <p class="flex justify-center md:m-1">0</p>
               </div>
             </div>
           </div>
