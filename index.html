@@ -11,49 +11,49 @@
     <div class="m-6 p-12">
       <div class="flex justify-center m-auto">
         <div class="flex justify-center border border-2 border-black-200 shadow-2xl rounded-xl">
-          <div class="flex flex-col gap-20 md:gap-28 bg-pink-300 px-3 md:px-6 lg:px-12 py-3 md:py-4 lg:py-8 pr-14 md:pr-24 lg:pr-32 rounded-l-lg">
+          <div id="player1" class="flex flex-col gap-20 md:gap-28 bg-pink-300 px-3 md:px-6 lg:px-12 py-3 md:py-4 lg:py-8 pr-14 md:pr-24 lg:pr-32 rounded-l-lg">
             <div class="text-sm sm:text-lg md:text-xl lg:text-4xl px-0 md:px-1 lg:px-3 m-2 sm:m-3 md:m-6">
               <h1 class="flex justify-center ">PLAYER 1</h1>
-              <p class="flex justify-center m-1 md:m-2 text-xl sm:text-3xl md:text-4xl lg:text-5xl text-pink-700">0</p>
+              <p id="finalscore1" class="flex justify-center m-1 md:m-2 text-xl sm:text-3xl md:text-4xl lg:text-5xl text-pink-700">0</p>
             </div>
             <div class="p-2 m-4 md:m-6">
               <div class="text-xs sm:text-sm md:text-lg lg:text-2xl border border-2 border-pink-700 shadow-xl bg-pink-700 text-white rounded-lg px-2 md:mx-1 lg:mx-2">
                 <h1 class="flex justify-center ">current</h1>
-                <p class="flex justify-center md:m-1">0</p>
+                <p id="score1" class="flex justify-center md:m-1">0</p>
               </div>
             </div>
           </div>
           <div class="absolute">
             <div class="flex flex-col justify-between text-xs md:text-sm lg:text-lg">
-              <h3 class="border border-1 border-white shadow-xl rounded-3xl bg-white px-2 md:px-4 lg:px-8 my-3 sm:my-4 md:my-6 mb-6 sm:mb-10 md:mb-12 lg:mb-16 ">
+              <h3 id="newgame" class="border border-1 border-white shadow-xl rounded-3xl bg-white px-2 md:px-4 lg:px-8 my-3 sm:my-4 md:my-6 mb-6 sm:mb-10 md:mb-12 lg:mb-16 ">
                 <i class="fa-solid fa-dice-d6"></i> New Game
               </h3>
-              <div id="0" class="h-14 w-14 md:h-22 md:w-24 lg:h-30 lg:w-32 p-3 md:p-6 lg:p-8 m-6 md:m-8 lg:m-10 mb-12 sm:mb-14 md:mb-28 lg:mb-24">
-                <!-- <i id="role" class="fa-solid fa-dice-one"></i> -->
-                <img src="dice-1.jpg" alt="dice-1" class=" rounded-md lg:rounded-lg">
+              <div  class="h-14 w-14 md:h-22 md:w-24 lg:h-30 lg:w-32 p-3 md:p-6 lg:p-8 m-6 md:m-8 lg:m-10 mb-12 sm:mb-14 md:mb-28 lg:mb-24">
+                <img src="dice-1.jpg" alt="dice-1" id="dice" class="rounded-md lg:rounded-lg ">
               </div>
               <div class="flex flex-col gap-1 sm:gap-2 md:gap-4">
-                <button class="border border-2 border-white bg-white rounded-3xl px-1 sm:px-2  lg:px-6 shadow-2xl">
+                <button id="roledice" class="border border-2 border-white bg-white rounded-3xl px-1 sm:px-2  lg:px-6 shadow-2xl">
                   <i class="fa-solid fa-dice"></i> ROLL DICE
                 </button>
-                <button class="border border-2 border-white bg-white rounded-3xl px-1 md:px-2 lg:px-6 shadow-2xl"><i class="fa-solid fa-circle-stop"></i> HOLD</button>
+                <button id="hold" class="border border-2 border-white bg-white rounded-3xl px-1 md:px-2 lg:px-6 shadow-2xl"><i class="fa-solid fa-circle-stop"></i> HOLD</button>
               </div>
             </div>
           </div>
-          <div class="flex flex-col gap-20 md:gap-28 bg-pink-100 px-3 md:px-6 lg:px-12 py-3 md:py-4 lg:py-8 pl-14 md:pl-24 lg:pl-32 rounded-r-lg">
+          <div id="player2" class="flex flex-col gap-20 md:gap-28 bg-pink-100 px-3 md:px-6 lg:px-12 py-3 md:py-4 lg:py-8 pl-14 md:pl-24 lg:pl-32 rounded-r-lg">
             <div class="text-sm sm:text-lg md:text-xl lg:text-4xl px-0 md:px-1 lg:px-3 m-2 sm:m-3 md:m-6">
               <h1 class="flex justify-center ">PLAYER 2</h1>
-              <p class="flex justify-center m-1 md:m-2 text-xl sm:text-3xl md:text-4xl lg:text-5xl text-pink-700">0</p>
+              <p id="finalscore2" class="flex justify-center m-1 md:m-2 text-xl sm:text-3xl md:text-4xl lg:text-5xl text-pink-700">0</p>
             </div>
             <div class="p-2 m-4 md:m-6">
               <div class="text-xs sm:text-sm md:text-lg lg:text-2xl border border-2 border-pink-700 shadow-xl bg-pink-700 text-white rounded-lg px-2 md:mx-1 lg:mx-2">
                 <h1 class="flex justify-center ">current</h1>
-                <p class="flex justify-center md:m-1">0</p>
+                <p id="score2" class="flex justify-center md:m-1">0</p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
